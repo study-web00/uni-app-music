@@ -1,0 +1,63 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "演示",
+				"backgroundColorTop":"#DD524D"
+			}
+		}, {
+			"path": "pages/rank/rank",
+			"style": {
+				"navigationBarTitleText": "排行榜",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/singer/singer",
+			"style": {
+				"navigationBarTitleText": "歌手页面",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#DD524D",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#bfbfbf",
+		"selectedColor": "#DD524D",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/iconfont/homepage.png",
+			"selectedIconPath": "static/iconfont/homepage_fill.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/rank/rank",
+			"iconPath": "static/iconfont/paiHangBang.png",
+			"selectedIconPath": "static/iconfont/paihangbang_fill.png",
+			"text": "排行"
+		}, {
+			"pagePath": "pages/singer/singer",
+			"iconPath": "static/iconfont/people.png",
+			"selectedIconPath": "static/iconfont/people_fill.png",
+			"text": "歌手"
+		}]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
